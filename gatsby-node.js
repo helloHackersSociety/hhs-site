@@ -24,3 +24,22 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   })
 }
+
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  const links = [
+    { title: "Events", url: "/events" },
+    { title: "Team", url: "/team" },
+  ]
+  links.forEach(link => {
+    const node = {
+      id: createNodeId(link.title),
+      title: link.title,
+      url: link.url,
+      internal: {
+        type: "Links",
+        contentDigest: createContentDigest(link),
+      },
+    }
+    actions.createNode(node)
+  })
+}

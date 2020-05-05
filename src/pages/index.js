@@ -4,8 +4,10 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+    
     <SEO title="Home" />
-      <h1><span role="img" aria-label="waving hand emoji">👋</span> Hello hacker! </h1>
+      <h1><span role="img" aria-label="waving hand emoji">👋</span> Hello hacker!</h1>
+
   </Layout>
 )
 
