@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `helloHackers Society`,
+    description: `A hackathon society based out of Manchester Metropolitain University, we run ManMetHacks anually aswell as workshops, talks, meet-ups, coding courses and more! Accelerate your degree and join the society today!`,
+    author: `Tom Misson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,15 +18,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `helloHackers Society`,
+        short_name: `helloHackers`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hellohackers.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/src/events`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
