@@ -11,10 +11,10 @@ export default function Template({
   return (
     <Layout>
         <SEO title={frontmatter.title}/>
-        <div className="blog-post-container">
+        <div className="blog-post-container" style={{padding:`2rem 0`}}>
         <div className="blog-post">
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
+            <h1 style={{fontSize:`3.5rem`}}>{frontmatter.title}</h1>
+            <p>{frontmatter.desc} - {frontmatter.date}</p>
             <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -32,6 +32,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
+        desc
         title
       }
     }
