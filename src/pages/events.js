@@ -16,6 +16,8 @@ const EventsPage = ({
     return(
         <Layout> 
             <SEO title="Events"/>
+            <h1><span role="img" aria-label="calender emoji">📆</span>Our events!</h1>
+            <p>Our up-coming events can be found here: </p>
             <div>{Posts}</div>
         </Layout>
 
