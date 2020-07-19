@@ -50,7 +50,7 @@ export default class TeamPage extends Component {
                 <SEO title="Meet the team"/>
                 <h2><strong>The Team</strong></h2>
                 <br/>
-                <p>Bringing you events such as ManMetHacks, talks and workshops, the helloHackers commitee work tirelessly to make sure your hacking experience is a great one!🎉 </p>
+                <p>Bringing you events such as ManMetHacks, talks and workshops, the helloHackers commitee work tirelessly to make sure your hacking experience is a great one! <span role="img" aria-label="party popper emoji"></span>🎉 </p>
                 <br/>
                 <div className="teamWrapper">
                 {
