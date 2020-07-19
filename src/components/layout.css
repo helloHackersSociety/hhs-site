@@ -1,5 +1,35 @@
 .profile{
   display: inline;
+  margin-bottom: 20px;
+}
+
+.link{
+  display: inline;
+  text-decoration: none;
+  list-style: none;   
+  margin: 10px;
+  font-weight: bold;
+}
+
+.link a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.twitter{
+  margin: 0 10px;
+}
+
+header ul{
+  margin: 0;
+  text-align: right;
+  margin-right: 15px;
+  align-self: center;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .teamWrapper{
@@ -33,7 +63,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
 nav,
@@ -642,6 +671,23 @@ pre tt:after {
   }
 
   .profile{
+    margin: 20px;
+  }
+
+  .link{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;   
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .link a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header ul{
     margin: 20px;
   }
 }

@@ -25,8 +25,7 @@ const Header = ({ siteTitle }) => {
       }}
     >
       <div
-        style={{
-          margin: `0 auto`,
+        style={{ 
           maxWidth: 960,
           padding: `1.45rem 1.0875rem`,
         }}
@@ -42,14 +41,13 @@ const Header = ({ siteTitle }) => {
             {siteTitle}
           </Link>
         </h1>
-
-        <ul>
+      </div>
+      <ul>
           { 
             links.allLinks.nodes.map((link) =>
             <li className="link" key={link.id}><Link to={link.url}>{link.title}</Link></li>
           )}          
         </ul>
-      </div>
     </header>
   )
 }

@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+
+        <footer style={{marginTop:`5rem`}}>
           <p>© {new Date().getFullYear()} helloHackers Society - Manchester Metropolitain University</p>
         </footer>
       </div>
